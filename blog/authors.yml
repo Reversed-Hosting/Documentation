@@ -1,0 +1,20 @@
+marcello:
+  name: Marcello
+  title: Founder
+  image_url: https://github.com/marcello-on-duty.png
+  page: true
+
+robin:
+  name: Robin
+  title: Founder
+  image_url: https://github.com/tegelsoep.png
+  page: true
+
+senna:
+  name: Senna
+  title: Web Developer
+  url: https://linkedin.com/in/senna
+  image_url: https://github.com/Poseidon281.png
+  page: true
+  socials:
+    github: Poseidon281
