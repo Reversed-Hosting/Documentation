@@ -2,11 +2,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
   title: 'Reversed Docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Documentation for Reversed Hosting',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -16,15 +14,12 @@ const config: Config = {
   url: 'https://docs.reversed.gg',
   baseUrl: '/',
 
-  organizationName: 'Reversed-Hosting', // Usually your GitHub org/user name.
-  projectName: 'Documentaton', // Usually your repo name.
+  organizationName: 'Reversed-Hosting',
+  projectName: 'Documentation',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -36,10 +31,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Reversed-Hosting/Documentation/tree/main',
         },
         blog: {
           showReadingTime: true,
@@ -47,11 +40,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/Reversed-Hosting/Documentation/tree/main',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -64,24 +53,23 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.png',
     navbar: {
-      title: 'My Site',
+      title: 'Reversed Docs',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Reversed Docs Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Guides',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Reversed-Hosting/Documentation',
           label: 'GitHub',
           position: 'right',
         },
@@ -103,16 +91,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/cEZ8swWavm',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/Reversed-Hosting',
             },
           ],
         },
@@ -123,14 +107,10 @@ const config: Config = {
               label: 'Blog',
               to: '/blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Reversed Hosting. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

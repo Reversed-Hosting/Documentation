@@ -3,17 +3,20 @@ marcello:
   title: Founder
   image_url: https://github.com/marcello-on-duty.png
   page: true
+  socials:
+    github: marcello-on-duty
 
 robin:
   name: Robin
   title: Founder
   image_url: https://github.com/tegelsoep.png
   page: true
+  socials:
+    github: tegelsoep
 
 senna:
   name: Senna
   title: Web Developer
-  url: https://linkedin.com/in/senna
   image_url: https://github.com/Poseidon281.png
   page: true
   socials:

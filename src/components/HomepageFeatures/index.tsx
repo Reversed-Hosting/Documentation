@@ -1,62 +1,54 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from "clsx"
+import styles from "./styles.module.css"
 
-type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
-};
-
-const FeatureList: FeatureItem[] = [
+const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Gaming Servers",
+    icon: "🎮",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        High-performance game servers for Minecraft, CS2, Rust, ARK, and more. Instant setup with our one-click
+        installers and 24/7 DDoS protection.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "VPS Hosting",
+    icon: "☁️",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Scalable virtual private servers with SSD storage, full root access, and choice of Linux distributions. Perfect
+        for web hosting and applications.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Dedicated Servers",
+    icon: "🖥️",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Powerful dedicated hardware for demanding applications. Full control, maximum performance, and enterprise-grade
+        infrastructure.
       </>
     ),
   },
-];
+]
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ icon, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <div className="feature-icon">{icon}</div>
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </div>
-  );
+  )
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
@@ -67,5 +59,5 @@ export default function HomepageFeatures(): ReactNode {
         </div>
       </div>
     </section>
-  );
+  )
 }
